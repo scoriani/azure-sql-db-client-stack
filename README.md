@@ -1,0 +1,1 @@
+# azure-sql-db-client-stack
