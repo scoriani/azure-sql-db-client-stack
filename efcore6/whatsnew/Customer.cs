@@ -35,6 +35,6 @@ namespace whatsnew
         public int LastEditedBy { get; set; }
         public DateTime ValidFrom { get; set; }
         public DateTime ValidTo { get; set; }
-        public string? NuCustomerName { get; set; }
+        public string NuCustomerName { get; set; }
     }
 }

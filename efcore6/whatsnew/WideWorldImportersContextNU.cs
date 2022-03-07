@@ -5,12 +5,12 @@ using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace whatsnew
 {
-    public partial class WideWorldImportersContext : DbContext
+    public partial class WideWorldImportersContextNU : DbContext
     {
-        public WideWorldImportersContext()
+        public WideWorldImportersContextNU()
         {
         }
-        public WideWorldImportersContext(DbContextOptions<WideWorldImportersContext> options)
+        public WideWorldImportersContextNU(DbContextOptions<WideWorldImportersContextNU> options)
             : base(options)
         {
         }
@@ -34,9 +34,8 @@ namespace whatsnew
         }
         protected override void ConfigureConventions(ModelConfigurationBuilder configurationBuilder)
         {
-            // configurationBuilder.Properties<string>()
-            //     .HaveColumnType("varchar(250)");
-
+            configurationBuilder.Properties<string>()
+                .HaveColumnType("varchar(250)");
         }
     }
 }
