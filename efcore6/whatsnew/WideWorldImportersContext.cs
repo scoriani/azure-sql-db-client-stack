@@ -32,11 +32,6 @@ namespace whatsnew
                 optionsBuilder.UseSqlServer("Server=localhost;Database=WideWorldImporters;Trusted_Connection=True;");
             }
         }
-        protected override void ConfigureConventions(ModelConfigurationBuilder configurationBuilder)
-        {
-            // configurationBuilder.Properties<string>()
-            //     .HaveColumnType("varchar(250)");
 
-        }
     }
 }

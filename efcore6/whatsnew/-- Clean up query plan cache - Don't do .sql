@@ -1,3 +1,4 @@
+-- Clean up query plan cache - Don't do this in production!!!
 DBCC FREEPROCCACHE
 
 -- Check query execution plans in cache

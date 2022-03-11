@@ -35,7 +35,7 @@ namespace whatsnew
             services.AddDbContext<WideWorldImportersContext>(options =>
                 options.UseSqlServer(config["ConnectionStrings:localconf"])
              //   .LogTo(Console.WriteLine).EnableSensitiveDataLogging()
-                .UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking)
+               .UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking)
              //   .EnableThreadSafetyChecks(false)
                 );
 
@@ -45,7 +45,6 @@ namespace whatsnew
                 .UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking)
              //   .EnableThreadSafetyChecks(false)
                 );
-
 
             queryCustomers =
                 EF.CompileQuery((WideWorldImportersContextNU context, string strCust) => context.Customers.TagWith("Query compiled!").Where(c => c.NuCustomerName == strCust));
