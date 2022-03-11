@@ -1,11 +1,11 @@
 ﻿using BenchmarkDotNet.Running;
 using whatsnew;
 
-//var summary = BenchmarkRunner.Run<Benchmark>();
+var summary = BenchmarkRunner.Run<Benchmark>();
 
-var bench = new Benchmark();
+//var bench = new Benchmark();
 
-bench.QueryWithLiteralsAndScan();
+//bench.QueryWithLiteralsAndScan();
 
 //bench.QueryWithParameterAndNoScan();
 

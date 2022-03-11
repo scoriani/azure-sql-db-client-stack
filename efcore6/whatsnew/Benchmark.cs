@@ -111,6 +111,7 @@ namespace whatsnew
             }
         }
 
+        [Benchmark]
         public void QueryWithClientSideProcessing()
         {
             // Getting a db context instance
